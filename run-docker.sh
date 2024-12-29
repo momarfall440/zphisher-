@@ -18,7 +18,8 @@ if [[ ! $check_container == $CONTAINER ]]; then
 	echo "Creating new container..."
 	docker create \
 		--interactive --tty \
-		--volume ${MOUNT_LOCATION}:/zphisher/auth/ \
+		--volume ${MOUNT_LOCATION}:/zphisher/auth/ \ 
+  z./phishe
 		--network host \
 		--name "${CONTAINER}" \
 		"${IMAGE}"
